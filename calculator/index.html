@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+<div class="container">
+      <div class="row" >
+        <div class="col">
+          <div>
+            <h1 class="display-3">Simple Calculator</h1>
+          </div>
+        </div>
+      </div>
+      <form action="#">
+        <div class="row">
+          <div class="col">
+            <label class="form-label" for="Number1">Number 1:</label>
+            <input class="form-control" name="Number1" type="text"placeholder="Enter First Number"id="Number1"/>
+          </div>
+          <div class="col">
+            <label class="form-label" for="Operation">Operation:</label>
+            <select class="form-select" id="Operation" name="Operation">
+              <option selected value="Operator">Select Operator</option>
+              <option value="Addition(+)">Addition (+)</option>
+              <option value="Subtraction(-)">Subtraction (-)</option>
+              <option value="Multiplication(*)">Multiplication (*)</option>
+              <option value="Division(/)">Division (/)</option>
+            </select>
+          </div>
+          <div class="col">
+            <label class="form-label" for="Number2">Number 2:</label>
+            <input class="form-control" name="Number2" type="text" placeholder="Enter Second Number"id="Number2"/>
+          </div>
+        </div>
+      </form>
+      <div class="row button_row">
+          <div class="col-4">
+            <button onclick=calculate() class="btn btn-primary" type="button">Calculate</button>
+          </div>
+      </div>
+      <div class="row result_show ">
+        <div class="col-12 ">
+          <div class="position-relative" >
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <div class="dis" id="result"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+   <script src="javascript/main.js"></script>
+   <script src="javascript/bootstrap.bundle.js"></script>
+
+   
+ </body>
+</html>
